@@ -39,7 +39,7 @@ export function ComplaintForm({ onCreate }) {
   return (
     <section className="register-panel form-panel" aria-labelledby="new-entry-title">
       <div className="section-heading">
-        <div><span className="section-kicker">Form CR–01</span><h2 id="new-entry-title">New complaint entry</h2></div>
+        <div><span className="section-kicker">Form CR–01</span><h2 id="new-entry-title">New complaint entry</h2><p className="form-promise">We promise, we won't ghost your complaint 😉</p></div>
         <span className="required-note">* Required fields</span>
       </div>
       <form className="complaint-form" onSubmit={submit} noValidate>
