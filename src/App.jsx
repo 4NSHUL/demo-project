@@ -17,7 +17,7 @@ function App() {
     <main className="app-shell">
       <header className="registry-header">
         <div className="rwa-seal" aria-hidden="true"><span>RWA</span><small>EST. 2012</small></div>
-        <div className="registry-title"><span className="document-label">Residents' Welfare Association · Official Record</span><h1>Complaint Register</h1><p>Community service, maintenance & resolution ledger</p></div>
+        <div className="registry-title"><span className="document-label">Residents' Welfare Association · Official Record</span><h1>Complaint Register</h1></div>
         <div className="registry-meta"><strong>Ignis community</strong><span className={`mode-pill mode-${storageMode}`}>{storageMode === 'supabase' ? 'Shared community register' : 'Browser demo register'}</span></div>
       </header>
 

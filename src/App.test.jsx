@@ -19,6 +19,7 @@ test('renders the complaint register, dependent form, and seeded ledger', async 
   expect(screen.getByRole('heading', { name: 'Complaint Register' })).toBeVisible()
   expect(screen.getByText('Ignis community')).toBeVisible()
   expect(screen.queryByText('RWA/CR/2026')).not.toBeInTheDocument()
+  expect(screen.queryByText('Community service, maintenance & resolution ledger')).not.toBeInTheDocument()
   expect(screen.getByText("We promise, we won't ghost your complaint 😉")).toBeVisible()
   expect(screen.getByLabelText(/Flat Number/)).toBeDisabled()
   expect(await screen.findByText('CR-2026-0008')).toBeVisible()
