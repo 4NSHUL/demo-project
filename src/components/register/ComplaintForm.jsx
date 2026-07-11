@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BLOCK_FLATS, COMPLAINT_TYPES, STATUSES } from '../../data/registerConfig.js'
 import { createInitialForm, validateComplaint } from '../../utils/register.js'
+import { playCartoonBoing } from '../../utils/cartoonBoing.js'
 
 function FieldError({ id, message }) {
   return message ? <span id={id} className="field-error">{message}</span> : null
@@ -29,7 +30,10 @@ export function ComplaintForm({ onCreate }) {
     setSaving(true)
     const saved = await onCreate(values)
     setSaving(false)
-    if (saved) setValues(createInitialForm())
+    if (saved) {
+      playCartoonBoing()
+      setValues(createInitialForm())
+    }
   }
 
   return (
